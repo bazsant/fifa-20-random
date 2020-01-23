@@ -1,0 +1,7 @@
+<nav class="navbar navbar-expand-sm bg-light navbar-light">
+    <ul class="navbar-nav">
+        <li *ngFor="let link of links" class="nav-item active">
+            <a class="nav-link" [routerLink]="link.fragment">{{link.title}}</a>
+        </li>
+    </ul>
+</nav>
