@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
-import { MatButtonModule } from '@angular/material';
+import { MatButtonModule, MatCardModule, MatMenuModule, MatIconModule, MatToolbarModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -25,7 +25,11 @@ import { NotFoundComponent } from './not-found/not-found.component';
     BrowserAnimationsModule,
     AppRoutingModule,
     NgbNavModule,
-    MatButtonModule
+    MatButtonModule,
+    MatCardModule,
+    MatMenuModule,
+    MatIconModule,
+    MatToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

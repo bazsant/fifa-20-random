@@ -1,12 +1,29 @@
 <div class="container">
-    <div class="row">
-        <div class="col">
-            <button (click)="sortear()" mat-raised-button>Sortear</button>            
-        </div>
-    </div>
-    <div class="row">
-        <div class="col">
-            <label>{{escalacao}}</label>
-        </div>
-    </div>
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title>Sorteio</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <div class="row">
+                <div class="col-3 col-md-2 text-right">                    
+                    <label>Escalação:</label>
+                </div>
+                <div class="col">
+                    <label>{{escalacao}}</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3 col-md-2 text-right">
+                    <label>Time:</label>
+                </div>
+                <div class="col">
+                    <label>{{time}}</label>
+                </div>
+            </div>
+        </mat-card-content>
+        <mat-card-actions class="text-right">
+            <button (click)="sortear()" mat-flat-button color="primary">Sortear</button>
+        </mat-card-actions>
+    </mat-card>
+
 </div>

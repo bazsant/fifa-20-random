@@ -9,7 +9,7 @@ import { ActivatedRoute } from '@angular/router';
 export class HeaderComponent implements OnInit {
 
   links = [
-    { title: 'Formações', fragment: 'formacoes' },
+    { title: 'Home', fragment: '' },
   ];
 
   constructor(private route: ActivatedRoute) { }

@@ -10,6 +10,7 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   escalacao = '';
+  time = '';
 
   formacoes = [
     '3-1-4-2',
@@ -44,19 +45,38 @@ export class HomeComponent implements OnInit {
     '5-2-1-2',
     '5-3-2',
     '5-4-1 Diamond',
-    '5-4-1 Flat']
+    '5-4-1 Flat'];
+
+    times = [
+      'FC Barcelona',
+      'Manchester City',
+      'Real Madrid',
+      'Juventus',
+      'PSG',
+      'Liverpool',
+      'FC Bayern',
+      'Atletico Madrid',
+      'França',
+      'Espanha',
+      'Alemanha',
+      'Bélgica',
+      'Portugal',
+      'Itália',
+      'Holanda'
+    ];
 
   ngOnInit() {
   }
 
-  sortear() {     
-      const timer = setInterval(() => {
-        this.escalacao = this.formacoes[Math.floor(Math.random() * this.formacoes.length)];
-      }, 10);
+  sortear() {
+    const timer = setInterval(() => {
+      this.escalacao = this.formacoes[Math.floor(Math.random() * this.formacoes.length)];
+      this.time = this.times[Math.floor(Math.random() * this.times.length)];
+    }, 10);
 
-      setTimeout(() => {
-        clearInterval(timer);
-      }, 500);
+    setTimeout(() => {
+      clearInterval(timer);
+    }, 500);
   }
 
 }
